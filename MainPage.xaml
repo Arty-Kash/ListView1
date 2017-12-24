@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            x:Class="ListView.MainPage">
+        <ContentPage.Content>
+        <StackLayout>
+            <!-- Add a new book to the book list "BookListView" -->
+            <Button Text="Add New Book" Clicked="OnNewBook" />
+            <Entry x:Name="Entry1" Placeholder="Input New Book"
+                Keyboard="Text" />
+            <!-- Create a book List "BookListView".
+                 Call "OnTap" method, if one of the books is tapped -->
+            <ListView x:Name="BookListView" ItemTapped="OnTap" >
+                    </ListView>
+        </StackLayout>
+        </ContentPage.Content>
+</ContentPage>
+    
